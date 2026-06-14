@@ -3,9 +3,9 @@
 #ifndef PROJ_MEMALLOC_H
 #define PROJ_MEMALLOC_H
 
-void* memPoolAlloc(size_t size);
+int* memPoolAlloc();
 void memPoolFree(void* ptr);
-void memPoolInit(size_t poolSize);
-void memPoolDestroy();
+int memPoolInit(size_t poolSize);
+int memPoolDestroy();
 
 #endif // PROJ_MEMALLOC_H
